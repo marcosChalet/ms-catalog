@@ -8,4 +8,8 @@ export class ProductsRepository {
   async getAllProducts() {
     return await this.prismaService.catalog.findMany();
   }
+
+  async getDeals() {
+    return await this.prismaService.deals.findMany();
+  }
 }
