@@ -40,7 +40,7 @@ services:
       - DATABASE_URL=postgresql://catalog:catalog@pg-database:5432/catalog?schema=public
       - REDIS_HOST=redis-cache
       - REDIS_PORT=6379
-      - NPM_RUN_COMMAND=npm run start:dev
+      - NPM_RUN_COMMAND=npm run start:migrate:dev
     networks:
       - database-net
       - cache-net
